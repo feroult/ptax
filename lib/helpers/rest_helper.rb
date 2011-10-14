@@ -4,7 +4,7 @@ module Helpers
       RestClient.get(url, :params => split_params(params)) do |response, request, result|
         case response.code
           when 200
-            parse(response.body)
+            response.body
           else
             raise "PTAX API Error(code=#{response.code}): #{response.body}"
         end
@@ -15,7 +15,7 @@ module Helpers
       RestClient.post(url, params) do |response, request, result|
         case response.code
           when 200
-            parse(response.body)
+            response.body
           else
             raise "PTAX API Error(code=#{response.code}): #{response.body}"
         end
@@ -23,7 +23,7 @@ module Helpers
     end  
 
     private              
-      def parse(response) 
+      def parse_html(response) 
         Nokogiri::HTML(response)
       end
 
