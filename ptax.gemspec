@@ -1,4 +1,4 @@
-version = '0.1.beta'
+version = '0.2.beta'
 
 Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
@@ -16,6 +16,7 @@ Gem::Specification.new do |s|
 
   s.bindir             = 'bin'
   s.executables        = []
+  s.require_paths      = ["lib"]
 
   s.add_dependency('rest-client',  '>= 1.6.7')
   s.add_dependency('nokogiri',  '>= 1.5.0')
