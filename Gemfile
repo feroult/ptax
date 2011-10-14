@@ -1,6 +1,6 @@
 source "http://rubygems.org"
 
-# Specify your gem's dependencies in rubype.gemspec
+# Specify your gem's dependencies in ptax.gemspec
 gemspec
 
 group :development, :test do

@@ -1,4 +1,4 @@
-= rubype
+= ptax
 
 Description goes here.
 
