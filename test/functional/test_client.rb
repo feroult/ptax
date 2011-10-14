@@ -7,7 +7,7 @@ class TestClient < Test::Unit::TestCase
     client = Ptax::Client.new
   end 
 
-  def xtest_find_daily_ptax_csv_link  
+  def test_find_daily_ptax_csv_link  
     client = Ptax::Client.new
     link = client.find_daily_ptax_csv_link(:date => '13/10/2011') 
     assert_not_nil link
